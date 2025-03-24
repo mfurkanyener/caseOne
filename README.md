@@ -18,16 +18,16 @@ Bu proje, React ve Tailwind CSS kullanarak geliştirilmiş bir **ürün sepeti**
 - **localStorage**: Sepet verilerinin tarayıcıda saklanması için.
 
 ## Nasıl Çalışır
-Repoyu bilgisayarınıza kopyalayın: 
-- ```bash
-  https://github.com/mfurkanyener/caseOne.git
+1. Repoyu bilgisayarınıza kopyalayın: 
+    ```bash
+   git clone https://github.com/mfurkanyener/caseOne.git
    
-1. Gerekli bağımlılıkları yüklemek için aşağıdaki komutu çalıştırın:
+2. Gerekli bağımlılıkları yüklemek için aşağıdaki komutu çalıştırın:
 
-   - ```bash
-     npm install
+   ```bash
+   npm install
      
-2. Uygulamayı çalıştırmak için aşağıdaki komutu kullanın:
-3. ```bash
+3. Uygulamayı çalıştırmak için aşağıdaki komutu kullanın:
+   ```bash
    npm start
 Uygulama, varsayılan olarak http://localhost:3000 adresinde çalışacaktır.

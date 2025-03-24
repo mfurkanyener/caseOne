@@ -1,7 +1,7 @@
 import React from 'react';
 import CartIcon from './CartIcon';
 
-const Navbar = () => {
+const Navbar = ({ openCheckout }) => {
     return (
         <nav className="bg-gray-800 text-white p-4 fixed w-full z-10 top-0 left-0">
             <div className="flex items-center justify-between w-full">
@@ -14,7 +14,12 @@ const Navbar = () => {
                 </div>
 
                 <div className="flex items-center">
-                    <CartIcon/>
+                    <button
+                        onClick={openCheckout}
+                        className="bg-blue-500 py-2 px-4 rounded-lg hover:bg-blue-600"
+                    >
+                        <CartIcon />
+                    </button>
                 </div>
             </div>
         </nav>

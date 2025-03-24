@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 
 const Checkout = () => {
-    const cartItems = useSelector((state) => state.cart.items); // Sepetteki ürünleri Redux'tan alıyoruz
+    const cartItems = useSelector((state) => state.cart.items);
     const [name, setName] = useState('');
     const [address, setAddress] = useState('');
     const [paymentMethod, setPaymentMethod] = useState('');
@@ -10,12 +10,12 @@ const Checkout = () => {
     const totalAmount = cartItems.reduce((total, item) => total + item.price, 0).toFixed(2);
 
     const handleCheckout = () => {
-
         alert('Siparişiniz başarıyla tamamlandı!');
     };
 
     return (
-        <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-12">
+        <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-12"
+             style={{maxHeight: '600px', overflowY: 'auto'}}>
             <h1 className="text-3xl font-semibold text-center mb-6">Sipariş Tamamlama</h1>
 
             <div className="space-y-6">
